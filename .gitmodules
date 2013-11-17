@@ -1,0 +1,3 @@
+[submodule "3rdParty/PhilipsHueSDKiOS"]
+	path = 3rdParty/PhilipsHueSDKiOS
+	url = https://github.com/PhilipsHue/PhilipsHueSDKiOS.git

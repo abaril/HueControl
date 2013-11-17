@@ -7,7 +7,7 @@
 //
 
 #import "ABHueManager.h"
-#import <HueSDK/SDK.h>
+#import <HueSDK/HueSDK.h>
 
 @interface ABHueManager ()
 

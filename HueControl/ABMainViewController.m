@@ -8,7 +8,8 @@
 
 #import "ABMainViewController.h"
 
-#import <HueSDK/SDK.h>
+#import <CoreMotion/CoreMotion.h>
+#import <HueSDK/HueSDK.h>
 #import "PHBridgePushLinkViewController.h"
 #import "PHBridgeSelectionViewController.h"
 
@@ -18,6 +19,9 @@
 @property (weak, nonatomic) IBOutlet UILabel *proximityLabel;
 @property (strong, nonatomic) PHHueSDK *phHueSDK;
 @property (strong, nonatomic) PHBridgePushLinkViewController *pushLinkViewController;
+@property (strong, nonatomic) CMMotionManager *motionManager;
+@property (strong, nonatomic) NSOperationQueue *motionQueue;
+@property (copy, nonatomic) NSNumber *lightOn;
 
 @end
 
@@ -51,6 +55,28 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (NSUInteger)supportedInterfaceOrientations
+{
+    return UIInterfaceOrientationMaskPortrait|UIInterfaceOrientationMaskPortraitUpsideDown;
+}
+
+- (void)initAccelerometer
+{
+    self.motionManager = [[CMMotionManager alloc] init];
+    self.motionManager.accelerometerUpdateInterval = 1.0;
+    
+    self.motionQueue = [[NSOperationQueue alloc] init];
+
+    [self.motionManager startAccelerometerUpdatesToQueue:self.motionQueue withHandler:^(CMAccelerometerData *accelerometerData, NSError *error) {
+        if (accelerometerData.acceleration.z > 0.5) {
+            [self turnLightOff];
+        }
+        else {
+            [self turnLightOn];
+        }
+    }];
+}
+
 - (void)updateBrightnessLabel
 {
     self.brightnessLabel.text = [NSString stringWithFormat:@"%f", [UIScreen mainScreen].brightness];
@@ -61,12 +87,14 @@
 - (void)updateProximity
 {
     self.proximityLabel.text = [NSString stringWithFormat:@"%d", [UIDevice currentDevice].proximityState];
+    /*
     if ([UIDevice currentDevice].proximityState) {
         [self turnLightOff];
     }
     else {
         [self turnLightOn];
     }
+     */
 }
 
 #pragma mark - Flipside View Controller
@@ -122,36 +150,50 @@
 - (void)hueLocalConnection
 {
     NSLog(@"Connected!!!");
+    
+    [self initAccelerometer];
+}
+
+- (void)switchLightToState:(NSNumber *)on
+{
+    PHBridgeResourcesCache *cache = [PHBridgeResourcesReader readBridgeResourcesCache];
+    NSDictionary *lights = cache.lights;
+    
+    PHLight *light = [lights objectForKey:@"2"];
+    light.lightState.on = on;
+    if ([on boolValue]) {
+        light.lightState.brightness = @((int)((1.0f - [UIScreen mainScreen].brightness) * 254.0));
+        NSLog(@"Setting brightness to: %@", light.lightState.brightness);
+    }
+    
+    id<PHBridgeSendAPI> bridgeSendAPI = [[[PHOverallFactory alloc] init] bridgeSendAPI];
+    [bridgeSendAPI updateLightStateForId:light.identifier withLighState:light.lightState completionHandler:^(NSArray *errors) {
+        NSLog(@"Turned light on/off with errors: %@", errors);
+    }];
 }
 
 - (void)turnLightOn
 {
-    PHBridgeResourcesCache *cache = [PHBridgeResourcesReader readBridgeResourcesCache];
-    NSDictionary *lights = cache.lights;
+    if (self.lightOn && ([self.lightOn boolValue] == YES)) {
+        return;
+    }
     
-    PHLight *light = [lights objectForKey:@"2"];
-    light.lightState.on = @YES;
-    light.lightState.brightness = @((int)((1.0f - [UIScreen mainScreen].brightness) * 254.0));
-    NSLog(@"Setting brightness to: %@", light.lightState.brightness);
-    
-    id<PHBridgeSendAPI> bridgeSendAPI = [[[PHOverallFactory alloc] init] bridgeSendAPI];
-    [bridgeSendAPI updateLightStateForId:light.identifier withLighState:light.lightState completionHandler:^(NSArray *errors) {
-        NSLog(@"Turned light on with errors: %@", errors);
-    }];
+    self.lightOn = @YES;
+    dispatch_async(dispatch_get_main_queue(), ^{
+        [self switchLightToState:@YES];
+    });
 }
 
 - (void)turnLightOff
 {
-    PHBridgeResourcesCache *cache = [PHBridgeResourcesReader readBridgeResourcesCache];
-    NSDictionary *lights = cache.lights;
+    if (self.lightOn && ([self.lightOn boolValue] == NO)) {
+        return;
+    }
     
-    PHLight *light = [lights objectForKey:@"2"];
-    light.lightState.on = @NO;
-    
-    id<PHBridgeSendAPI> bridgeSendAPI = [[[PHOverallFactory alloc] init] bridgeSendAPI];
-    [bridgeSendAPI updateLightStateForId:light.identifier withLighState:light.lightState completionHandler:^(NSArray *errors) {
-        NSLog(@"Turned light off with errors: %@", errors);
-    }];    
+    self.lightOn = @NO;
+    dispatch_async(dispatch_get_main_queue(), ^{
+        [self switchLightToState:@NO];
+    });
 }
 
 - (void)hueNoLocalConnection

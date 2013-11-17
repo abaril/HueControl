@@ -21,14 +21,42 @@
 		9D814CF7177FB2EF00908E2B /* ABMainViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9D814CF5177FB2EF00908E2B /* ABMainViewController_iPhone.xib */; };
 		9D814CFA177FB2EF00908E2B /* ABMainViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9D814CF8177FB2EF00908E2B /* ABMainViewController_iPad.xib */; };
 		9D814CFD177FB2EF00908E2B /* ABFlipsideViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9D814CFB177FB2EF00908E2B /* ABFlipsideViewController.xib */; };
-		9D814D04177FB3C200908E2B /* HueSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D814D03177FB3C200908E2B /* HueSDK.framework */; };
 		9D814D08177FB3DE00908E2B /* press_smartbridge.png in Resources */ = {isa = PBXBuildFile; fileRef = 9D814D06177FB3DE00908E2B /* press_smartbridge.png */; };
 		9D814D09177FB3DE00908E2B /* press_smartbridge@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9D814D07177FB3DE00908E2B /* press_smartbridge@2x.png */; };
-		9D814D12177FB40300908E2B /* PHBridgePushLinkViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D814D0B177FB40300908E2B /* PHBridgePushLinkViewController.m */; };
-		9D814D13177FB40300908E2B /* PHBridgePushLinkViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9D814D0C177FB40300908E2B /* PHBridgePushLinkViewController.xib */; };
-		9D814D14177FB40300908E2B /* PHBridgeSelectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D814D0E177FB40300908E2B /* PHBridgeSelectionViewController.m */; };
-		9D814D15177FB40300908E2B /* PHBridgeSelectionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9D814D0F177FB40300908E2B /* PHBridgeSelectionViewController.xib */; };
 		9D814D16177FB40300908E2B /* ABHueManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D814D11177FB40300908E2B /* ABHueManager.m */; };
+		9D8BA6E617C13922004279A4 /* HueSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D8BA6E517C13922004279A4 /* HueSDK.framework */; };
+		9D8BA6E917C13930004279A4 /* JSONKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D8BA6E817C13930004279A4 /* JSONKit.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		9D8BA6F917C13940004279A4 /* DDAbstractDatabaseLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D8BA6EB17C13940004279A4 /* DDAbstractDatabaseLogger.m */; };
+		9D8BA6FA17C13940004279A4 /* DDASLLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D8BA6ED17C13940004279A4 /* DDASLLogger.m */; };
+		9D8BA6FB17C13940004279A4 /* DDFileLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D8BA6EF17C13940004279A4 /* DDFileLogger.m */; };
+		9D8BA6FC17C13940004279A4 /* DDLog.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D8BA6F117C13940004279A4 /* DDLog.m */; };
+		9D8BA6FD17C13940004279A4 /* DDTTYLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D8BA6F317C13940004279A4 /* DDTTYLogger.m */; };
+		9D8BA6FE17C13940004279A4 /* ContextFilterLogFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D8BA6F617C13940004279A4 /* ContextFilterLogFormatter.m */; };
+		9D8BA6FF17C13940004279A4 /* DispatchQueueLogFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D8BA6F817C13940004279A4 /* DispatchQueueLogFormatter.m */; };
+		9D8BA72417C1395C004279A4 /* PHFindLightsManualEntryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D8BA70217C1395C004279A4 /* PHFindLightsManualEntryViewController.m */; };
+		9D8BA72517C1395C004279A4 /* PHFindLightsManualEntryViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9D8BA70317C1395C004279A4 /* PHFindLightsManualEntryViewController.xib */; };
+		9D8BA72617C1395C004279A4 /* PHFindLightsResultViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D8BA70517C1395C004279A4 /* PHFindLightsResultViewController.m */; };
+		9D8BA72717C1395C004279A4 /* PHFindLightsResultViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9D8BA70617C1395C004279A4 /* PHFindLightsResultViewController.xib */; };
+		9D8BA72817C1395C004279A4 /* PHFindLightsStartViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D8BA70817C1395C004279A4 /* PHFindLightsStartViewController.m */; };
+		9D8BA72917C1395C004279A4 /* PHFindLightsStartViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9D8BA70917C1395C004279A4 /* PHFindLightsStartViewController.xib */; };
+		9D8BA72A17C1395C004279A4 /* PHLoadingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D8BA70C17C1395C004279A4 /* PHLoadingViewController.m */; };
+		9D8BA72B17C1395C004279A4 /* PHLoadingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9D8BA70D17C1395C004279A4 /* PHLoadingViewController.xib */; };
+		9D8BA72C17C1395C004279A4 /* PHBridgeConfigurationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D8BA70F17C1395C004279A4 /* PHBridgeConfigurationViewController.m */; };
+		9D8BA72D17C1395C004279A4 /* PHBridgeConfigurationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9D8BA71017C1395C004279A4 /* PHBridgeConfigurationViewController.xib */; };
+		9D8BA72E17C1395C004279A4 /* PHBridgePushLinkViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D8BA71217C1395C004279A4 /* PHBridgePushLinkViewController.m */; };
+		9D8BA72F17C1395C004279A4 /* PHBridgePushLinkViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9D8BA71317C1395C004279A4 /* PHBridgePushLinkViewController.xib */; };
+		9D8BA73017C1395C004279A4 /* PHBridgeSelectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D8BA71517C1395C004279A4 /* PHBridgeSelectionViewController.m */; };
+		9D8BA73117C1395C004279A4 /* PHBridgeSelectionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9D8BA71617C1395C004279A4 /* PHBridgeSelectionViewController.xib */; };
+		9D8BA73217C1395C004279A4 /* PHConfigurationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D8BA71817C1395C004279A4 /* PHConfigurationViewController.m */; };
+		9D8BA73317C1395C004279A4 /* PHConfigurationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9D8BA71917C1395C004279A4 /* PHConfigurationViewController.xib */; };
+		9D8BA73417C1395C004279A4 /* addlightmanual.png in Resources */ = {isa = PBXBuildFile; fileRef = 9D8BA71B17C1395C004279A4 /* addlightmanual.png */; };
+		9D8BA73517C1395C004279A4 /* addlightmanual@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9D8BA71C17C1395C004279A4 /* addlightmanual@2x.png */; };
+		9D8BA73617C1395C004279A4 /* addlights.png in Resources */ = {isa = PBXBuildFile; fileRef = 9D8BA71D17C1395C004279A4 /* addlights.png */; };
+		9D8BA73717C1395C004279A4 /* addlights@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9D8BA71E17C1395C004279A4 /* addlights@2x.png */; };
+		9D8BA73817C1395C004279A4 /* press_smartbridge.png in Resources */ = {isa = PBXBuildFile; fileRef = 9D8BA71F17C1395C004279A4 /* press_smartbridge.png */; };
+		9D8BA73917C1395C004279A4 /* press_smartbridge@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9D8BA72017C1395C004279A4 /* press_smartbridge@2x.png */; };
+		9D8BA73A17C1395C004279A4 /* PHSoftwareUpdateManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D8BA72317C1395C004279A4 /* PHSoftwareUpdateManager.m */; };
+		9DC3A7C817C12EAE0037421C /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9DC3A7C717C12EAE0037421C /* CoreMotion.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -52,17 +80,60 @@
 		9D814CF6177FB2EF00908E2B /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ABMainViewController_iPhone.xib; sourceTree = "<group>"; };
 		9D814CF9177FB2EF00908E2B /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ABMainViewController_iPad.xib; sourceTree = "<group>"; };
 		9D814CFC177FB2EF00908E2B /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ABFlipsideViewController.xib; sourceTree = "<group>"; };
-		9D814D03177FB3C200908E2B /* HueSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = HueSDK.framework; sourceTree = "<group>"; };
 		9D814D06177FB3DE00908E2B /* press_smartbridge.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = press_smartbridge.png; sourceTree = "<group>"; };
 		9D814D07177FB3DE00908E2B /* press_smartbridge@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "press_smartbridge@2x.png"; sourceTree = "<group>"; };
-		9D814D0A177FB40300908E2B /* PHBridgePushLinkViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PHBridgePushLinkViewController.h; sourceTree = "<group>"; };
-		9D814D0B177FB40300908E2B /* PHBridgePushLinkViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PHBridgePushLinkViewController.m; sourceTree = "<group>"; };
-		9D814D0C177FB40300908E2B /* PHBridgePushLinkViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PHBridgePushLinkViewController.xib; sourceTree = "<group>"; };
-		9D814D0D177FB40300908E2B /* PHBridgeSelectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PHBridgeSelectionViewController.h; sourceTree = "<group>"; };
-		9D814D0E177FB40300908E2B /* PHBridgeSelectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PHBridgeSelectionViewController.m; sourceTree = "<group>"; };
-		9D814D0F177FB40300908E2B /* PHBridgeSelectionViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PHBridgeSelectionViewController.xib; sourceTree = "<group>"; };
 		9D814D10177FB40300908E2B /* ABHueManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ABHueManager.h; sourceTree = "<group>"; };
 		9D814D11177FB40300908E2B /* ABHueManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ABHueManager.m; sourceTree = "<group>"; };
+		9D8BA6E517C13922004279A4 /* HueSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HueSDK.framework; path = 3rdParty/PhilipsHueSDKiOS/HueSDK.framework; sourceTree = "<group>"; };
+		9D8BA6E717C13930004279A4 /* JSONKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JSONKit.h; path = 3rdParty/PhilipsHueSDKiOS/JSONKit/JSONKit.h; sourceTree = "<group>"; };
+		9D8BA6E817C13930004279A4 /* JSONKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JSONKit.m; path = 3rdParty/PhilipsHueSDKiOS/JSONKit/JSONKit.m; sourceTree = "<group>"; };
+		9D8BA6EA17C13940004279A4 /* DDAbstractDatabaseLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DDAbstractDatabaseLogger.h; path = 3rdParty/PhilipsHueSDKiOS/Lumberjack/DDAbstractDatabaseLogger.h; sourceTree = "<group>"; };
+		9D8BA6EB17C13940004279A4 /* DDAbstractDatabaseLogger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DDAbstractDatabaseLogger.m; path = 3rdParty/PhilipsHueSDKiOS/Lumberjack/DDAbstractDatabaseLogger.m; sourceTree = "<group>"; };
+		9D8BA6EC17C13940004279A4 /* DDASLLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DDASLLogger.h; path = 3rdParty/PhilipsHueSDKiOS/Lumberjack/DDASLLogger.h; sourceTree = "<group>"; };
+		9D8BA6ED17C13940004279A4 /* DDASLLogger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DDASLLogger.m; path = 3rdParty/PhilipsHueSDKiOS/Lumberjack/DDASLLogger.m; sourceTree = "<group>"; };
+		9D8BA6EE17C13940004279A4 /* DDFileLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DDFileLogger.h; path = 3rdParty/PhilipsHueSDKiOS/Lumberjack/DDFileLogger.h; sourceTree = "<group>"; };
+		9D8BA6EF17C13940004279A4 /* DDFileLogger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DDFileLogger.m; path = 3rdParty/PhilipsHueSDKiOS/Lumberjack/DDFileLogger.m; sourceTree = "<group>"; };
+		9D8BA6F017C13940004279A4 /* DDLog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DDLog.h; path = 3rdParty/PhilipsHueSDKiOS/Lumberjack/DDLog.h; sourceTree = "<group>"; };
+		9D8BA6F117C13940004279A4 /* DDLog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DDLog.m; path = 3rdParty/PhilipsHueSDKiOS/Lumberjack/DDLog.m; sourceTree = "<group>"; };
+		9D8BA6F217C13940004279A4 /* DDTTYLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DDTTYLogger.h; path = 3rdParty/PhilipsHueSDKiOS/Lumberjack/DDTTYLogger.h; sourceTree = "<group>"; };
+		9D8BA6F317C13940004279A4 /* DDTTYLogger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DDTTYLogger.m; path = 3rdParty/PhilipsHueSDKiOS/Lumberjack/DDTTYLogger.m; sourceTree = "<group>"; };
+		9D8BA6F517C13940004279A4 /* ContextFilterLogFormatter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContextFilterLogFormatter.h; sourceTree = "<group>"; };
+		9D8BA6F617C13940004279A4 /* ContextFilterLogFormatter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContextFilterLogFormatter.m; sourceTree = "<group>"; };
+		9D8BA6F717C13940004279A4 /* DispatchQueueLogFormatter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DispatchQueueLogFormatter.h; sourceTree = "<group>"; };
+		9D8BA6F817C13940004279A4 /* DispatchQueueLogFormatter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DispatchQueueLogFormatter.m; sourceTree = "<group>"; };
+		9D8BA70117C1395C004279A4 /* PHFindLightsManualEntryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PHFindLightsManualEntryViewController.h; sourceTree = "<group>"; };
+		9D8BA70217C1395C004279A4 /* PHFindLightsManualEntryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PHFindLightsManualEntryViewController.m; sourceTree = "<group>"; };
+		9D8BA70317C1395C004279A4 /* PHFindLightsManualEntryViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PHFindLightsManualEntryViewController.xib; sourceTree = "<group>"; };
+		9D8BA70417C1395C004279A4 /* PHFindLightsResultViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PHFindLightsResultViewController.h; sourceTree = "<group>"; };
+		9D8BA70517C1395C004279A4 /* PHFindLightsResultViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PHFindLightsResultViewController.m; sourceTree = "<group>"; };
+		9D8BA70617C1395C004279A4 /* PHFindLightsResultViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PHFindLightsResultViewController.xib; sourceTree = "<group>"; };
+		9D8BA70717C1395C004279A4 /* PHFindLightsStartViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PHFindLightsStartViewController.h; sourceTree = "<group>"; };
+		9D8BA70817C1395C004279A4 /* PHFindLightsStartViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PHFindLightsStartViewController.m; sourceTree = "<group>"; };
+		9D8BA70917C1395C004279A4 /* PHFindLightsStartViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PHFindLightsStartViewController.xib; sourceTree = "<group>"; };
+		9D8BA70B17C1395C004279A4 /* PHLoadingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PHLoadingViewController.h; sourceTree = "<group>"; };
+		9D8BA70C17C1395C004279A4 /* PHLoadingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PHLoadingViewController.m; sourceTree = "<group>"; };
+		9D8BA70D17C1395C004279A4 /* PHLoadingViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PHLoadingViewController.xib; sourceTree = "<group>"; };
+		9D8BA70E17C1395C004279A4 /* PHBridgeConfigurationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PHBridgeConfigurationViewController.h; path = 3rdParty/PhilipsHueSDKiOS/SampleApp/SDKWizard/PHBridgeConfigurationViewController.h; sourceTree = "<group>"; };
+		9D8BA70F17C1395C004279A4 /* PHBridgeConfigurationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PHBridgeConfigurationViewController.m; path = 3rdParty/PhilipsHueSDKiOS/SampleApp/SDKWizard/PHBridgeConfigurationViewController.m; sourceTree = "<group>"; };
+		9D8BA71017C1395C004279A4 /* PHBridgeConfigurationViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = PHBridgeConfigurationViewController.xib; path = 3rdParty/PhilipsHueSDKiOS/SampleApp/SDKWizard/PHBridgeConfigurationViewController.xib; sourceTree = "<group>"; };
+		9D8BA71117C1395C004279A4 /* PHBridgePushLinkViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PHBridgePushLinkViewController.h; path = 3rdParty/PhilipsHueSDKiOS/SampleApp/SDKWizard/PHBridgePushLinkViewController.h; sourceTree = "<group>"; };
+		9D8BA71217C1395C004279A4 /* PHBridgePushLinkViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PHBridgePushLinkViewController.m; path = 3rdParty/PhilipsHueSDKiOS/SampleApp/SDKWizard/PHBridgePushLinkViewController.m; sourceTree = "<group>"; };
+		9D8BA71317C1395C004279A4 /* PHBridgePushLinkViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = PHBridgePushLinkViewController.xib; path = 3rdParty/PhilipsHueSDKiOS/SampleApp/SDKWizard/PHBridgePushLinkViewController.xib; sourceTree = "<group>"; };
+		9D8BA71417C1395C004279A4 /* PHBridgeSelectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PHBridgeSelectionViewController.h; path = 3rdParty/PhilipsHueSDKiOS/SampleApp/SDKWizard/PHBridgeSelectionViewController.h; sourceTree = "<group>"; };
+		9D8BA71517C1395C004279A4 /* PHBridgeSelectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PHBridgeSelectionViewController.m; path = 3rdParty/PhilipsHueSDKiOS/SampleApp/SDKWizard/PHBridgeSelectionViewController.m; sourceTree = "<group>"; };
+		9D8BA71617C1395C004279A4 /* PHBridgeSelectionViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = PHBridgeSelectionViewController.xib; path = 3rdParty/PhilipsHueSDKiOS/SampleApp/SDKWizard/PHBridgeSelectionViewController.xib; sourceTree = "<group>"; };
+		9D8BA71717C1395C004279A4 /* PHConfigurationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PHConfigurationViewController.h; path = 3rdParty/PhilipsHueSDKiOS/SampleApp/SDKWizard/PHConfigurationViewController.h; sourceTree = "<group>"; };
+		9D8BA71817C1395C004279A4 /* PHConfigurationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PHConfigurationViewController.m; path = 3rdParty/PhilipsHueSDKiOS/SampleApp/SDKWizard/PHConfigurationViewController.m; sourceTree = "<group>"; };
+		9D8BA71917C1395C004279A4 /* PHConfigurationViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = PHConfigurationViewController.xib; path = 3rdParty/PhilipsHueSDKiOS/SampleApp/SDKWizard/PHConfigurationViewController.xib; sourceTree = "<group>"; };
+		9D8BA71B17C1395C004279A4 /* addlightmanual.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = addlightmanual.png; sourceTree = "<group>"; };
+		9D8BA71C17C1395C004279A4 /* addlightmanual@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "addlightmanual@2x.png"; sourceTree = "<group>"; };
+		9D8BA71D17C1395C004279A4 /* addlights.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = addlights.png; sourceTree = "<group>"; };
+		9D8BA71E17C1395C004279A4 /* addlights@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "addlights@2x.png"; sourceTree = "<group>"; };
+		9D8BA71F17C1395C004279A4 /* press_smartbridge.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = press_smartbridge.png; sourceTree = "<group>"; };
+		9D8BA72017C1395C004279A4 /* press_smartbridge@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "press_smartbridge@2x.png"; sourceTree = "<group>"; };
+		9D8BA72217C1395C004279A4 /* PHSoftwareUpdateManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PHSoftwareUpdateManager.h; sourceTree = "<group>"; };
+		9D8BA72317C1395C004279A4 /* PHSoftwareUpdateManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PHSoftwareUpdateManager.m; sourceTree = "<group>"; };
+		9DC3A7C717C12EAE0037421C /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,10 +141,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9DC3A7C817C12EAE0037421C /* CoreMotion.framework in Frameworks */,
 				9D814CD8177FB2EF00908E2B /* UIKit.framework in Frameworks */,
 				9D814CDA177FB2EF00908E2B /* Foundation.framework in Frameworks */,
 				9D814CDC177FB2EF00908E2B /* CoreGraphics.framework in Frameworks */,
-				9D814D04177FB3C200908E2B /* HueSDK.framework in Frameworks */,
+				9D8BA6E617C13922004279A4 /* HueSDK.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +155,7 @@
 		9D814CCB177FB2EF00908E2B = {
 			isa = PBXGroup;
 			children = (
+				9D8BA6E117C138F5004279A4 /* 3rdParty */,
 				9D814D05177FB3DE00908E2B /* Resources */,
 				9D814CDD177FB2EF00908E2B /* HueControl */,
 				9D814CD6177FB2EF00908E2B /* Frameworks */,
@@ -101,7 +174,8 @@
 		9D814CD6177FB2EF00908E2B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				9D814D03177FB3C200908E2B /* HueSDK.framework */,
+				9D8BA6E517C13922004279A4 /* HueSDK.framework */,
+				9DC3A7C717C12EAE0037421C /* CoreMotion.framework */,
 				9D814CD7177FB2EF00908E2B /* UIKit.framework */,
 				9D814CD9177FB2EF00908E2B /* Foundation.framework */,
 				9D814CDB177FB2EF00908E2B /* CoreGraphics.framework */,
@@ -112,12 +186,6 @@
 		9D814CDD177FB2EF00908E2B /* HueControl */ = {
 			isa = PBXGroup;
 			children = (
-				9D814D0A177FB40300908E2B /* PHBridgePushLinkViewController.h */,
-				9D814D0B177FB40300908E2B /* PHBridgePushLinkViewController.m */,
-				9D814D0C177FB40300908E2B /* PHBridgePushLinkViewController.xib */,
-				9D814D0D177FB40300908E2B /* PHBridgeSelectionViewController.h */,
-				9D814D0E177FB40300908E2B /* PHBridgeSelectionViewController.m */,
-				9D814D0F177FB40300908E2B /* PHBridgeSelectionViewController.xib */,
 				9D814D10177FB40300908E2B /* ABHueManager.h */,
 				9D814D11177FB40300908E2B /* ABHueManager.m */,
 				9D814CE6177FB2EF00908E2B /* ABAppDelegate.h */,
@@ -155,6 +223,130 @@
 				9D814D07177FB3DE00908E2B /* press_smartbridge@2x.png */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		9D8BA6E117C138F5004279A4 /* 3rdParty */ = {
+			isa = PBXGroup;
+			children = (
+				9D8BA6E417C1390A004279A4 /* JSONKit */,
+				9D8BA6E317C13902004279A4 /* Lumberjack */,
+				9D8BA6E217C138FB004279A4 /* PhilipsHue */,
+			);
+			name = 3rdParty;
+			sourceTree = "<group>";
+		};
+		9D8BA6E217C138FB004279A4 /* PhilipsHue */ = {
+			isa = PBXGroup;
+			children = (
+				9D8BA70017C1395C004279A4 /* FindLights */,
+				9D8BA70A17C1395C004279A4 /* LoadingView */,
+				9D8BA70E17C1395C004279A4 /* PHBridgeConfigurationViewController.h */,
+				9D8BA70F17C1395C004279A4 /* PHBridgeConfigurationViewController.m */,
+				9D8BA71017C1395C004279A4 /* PHBridgeConfigurationViewController.xib */,
+				9D8BA71117C1395C004279A4 /* PHBridgePushLinkViewController.h */,
+				9D8BA71217C1395C004279A4 /* PHBridgePushLinkViewController.m */,
+				9D8BA71317C1395C004279A4 /* PHBridgePushLinkViewController.xib */,
+				9D8BA71417C1395C004279A4 /* PHBridgeSelectionViewController.h */,
+				9D8BA71517C1395C004279A4 /* PHBridgeSelectionViewController.m */,
+				9D8BA71617C1395C004279A4 /* PHBridgeSelectionViewController.xib */,
+				9D8BA71717C1395C004279A4 /* PHConfigurationViewController.h */,
+				9D8BA71817C1395C004279A4 /* PHConfigurationViewController.m */,
+				9D8BA71917C1395C004279A4 /* PHConfigurationViewController.xib */,
+				9D8BA71A17C1395C004279A4 /* resources */,
+				9D8BA72117C1395C004279A4 /* SoftwareUpdate */,
+			);
+			name = PhilipsHue;
+			sourceTree = "<group>";
+		};
+		9D8BA6E317C13902004279A4 /* Lumberjack */ = {
+			isa = PBXGroup;
+			children = (
+				9D8BA6EA17C13940004279A4 /* DDAbstractDatabaseLogger.h */,
+				9D8BA6EB17C13940004279A4 /* DDAbstractDatabaseLogger.m */,
+				9D8BA6EC17C13940004279A4 /* DDASLLogger.h */,
+				9D8BA6ED17C13940004279A4 /* DDASLLogger.m */,
+				9D8BA6EE17C13940004279A4 /* DDFileLogger.h */,
+				9D8BA6EF17C13940004279A4 /* DDFileLogger.m */,
+				9D8BA6F017C13940004279A4 /* DDLog.h */,
+				9D8BA6F117C13940004279A4 /* DDLog.m */,
+				9D8BA6F217C13940004279A4 /* DDTTYLogger.h */,
+				9D8BA6F317C13940004279A4 /* DDTTYLogger.m */,
+				9D8BA6F417C13940004279A4 /* Extensions */,
+			);
+			name = Lumberjack;
+			sourceTree = "<group>";
+		};
+		9D8BA6E417C1390A004279A4 /* JSONKit */ = {
+			isa = PBXGroup;
+			children = (
+				9D8BA6E717C13930004279A4 /* JSONKit.h */,
+				9D8BA6E817C13930004279A4 /* JSONKit.m */,
+			);
+			name = JSONKit;
+			sourceTree = "<group>";
+		};
+		9D8BA6F417C13940004279A4 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				9D8BA6F517C13940004279A4 /* ContextFilterLogFormatter.h */,
+				9D8BA6F617C13940004279A4 /* ContextFilterLogFormatter.m */,
+				9D8BA6F717C13940004279A4 /* DispatchQueueLogFormatter.h */,
+				9D8BA6F817C13940004279A4 /* DispatchQueueLogFormatter.m */,
+			);
+			name = Extensions;
+			path = 3rdParty/PhilipsHueSDKiOS/Lumberjack/Extensions;
+			sourceTree = "<group>";
+		};
+		9D8BA70017C1395C004279A4 /* FindLights */ = {
+			isa = PBXGroup;
+			children = (
+				9D8BA70117C1395C004279A4 /* PHFindLightsManualEntryViewController.h */,
+				9D8BA70217C1395C004279A4 /* PHFindLightsManualEntryViewController.m */,
+				9D8BA70317C1395C004279A4 /* PHFindLightsManualEntryViewController.xib */,
+				9D8BA70417C1395C004279A4 /* PHFindLightsResultViewController.h */,
+				9D8BA70517C1395C004279A4 /* PHFindLightsResultViewController.m */,
+				9D8BA70617C1395C004279A4 /* PHFindLightsResultViewController.xib */,
+				9D8BA70717C1395C004279A4 /* PHFindLightsStartViewController.h */,
+				9D8BA70817C1395C004279A4 /* PHFindLightsStartViewController.m */,
+				9D8BA70917C1395C004279A4 /* PHFindLightsStartViewController.xib */,
+			);
+			name = FindLights;
+			path = 3rdParty/PhilipsHueSDKiOS/SampleApp/SDKWizard/FindLights;
+			sourceTree = "<group>";
+		};
+		9D8BA70A17C1395C004279A4 /* LoadingView */ = {
+			isa = PBXGroup;
+			children = (
+				9D8BA70B17C1395C004279A4 /* PHLoadingViewController.h */,
+				9D8BA70C17C1395C004279A4 /* PHLoadingViewController.m */,
+				9D8BA70D17C1395C004279A4 /* PHLoadingViewController.xib */,
+			);
+			name = LoadingView;
+			path = 3rdParty/PhilipsHueSDKiOS/SampleApp/SDKWizard/LoadingView;
+			sourceTree = "<group>";
+		};
+		9D8BA71A17C1395C004279A4 /* resources */ = {
+			isa = PBXGroup;
+			children = (
+				9D8BA71B17C1395C004279A4 /* addlightmanual.png */,
+				9D8BA71C17C1395C004279A4 /* addlightmanual@2x.png */,
+				9D8BA71D17C1395C004279A4 /* addlights.png */,
+				9D8BA71E17C1395C004279A4 /* addlights@2x.png */,
+				9D8BA71F17C1395C004279A4 /* press_smartbridge.png */,
+				9D8BA72017C1395C004279A4 /* press_smartbridge@2x.png */,
+			);
+			name = resources;
+			path = 3rdParty/PhilipsHueSDKiOS/SampleApp/SDKWizard/resources;
+			sourceTree = "<group>";
+		};
+		9D8BA72117C1395C004279A4 /* SoftwareUpdate */ = {
+			isa = PBXGroup;
+			children = (
+				9D8BA72217C1395C004279A4 /* PHSoftwareUpdateManager.h */,
+				9D8BA72317C1395C004279A4 /* PHSoftwareUpdateManager.m */,
+			);
+			name = SoftwareUpdate;
+			path = 3rdParty/PhilipsHueSDKiOS/SampleApp/SDKWizard/SoftwareUpdate;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -218,8 +410,20 @@
 				9D814CFD177FB2EF00908E2B /* ABFlipsideViewController.xib in Resources */,
 				9D814D08177FB3DE00908E2B /* press_smartbridge.png in Resources */,
 				9D814D09177FB3DE00908E2B /* press_smartbridge@2x.png in Resources */,
-				9D814D13177FB40300908E2B /* PHBridgePushLinkViewController.xib in Resources */,
-				9D814D15177FB40300908E2B /* PHBridgeSelectionViewController.xib in Resources */,
+				9D8BA72517C1395C004279A4 /* PHFindLightsManualEntryViewController.xib in Resources */,
+				9D8BA72717C1395C004279A4 /* PHFindLightsResultViewController.xib in Resources */,
+				9D8BA72917C1395C004279A4 /* PHFindLightsStartViewController.xib in Resources */,
+				9D8BA72B17C1395C004279A4 /* PHLoadingViewController.xib in Resources */,
+				9D8BA72D17C1395C004279A4 /* PHBridgeConfigurationViewController.xib in Resources */,
+				9D8BA72F17C1395C004279A4 /* PHBridgePushLinkViewController.xib in Resources */,
+				9D8BA73117C1395C004279A4 /* PHBridgeSelectionViewController.xib in Resources */,
+				9D8BA73317C1395C004279A4 /* PHConfigurationViewController.xib in Resources */,
+				9D8BA73417C1395C004279A4 /* addlightmanual.png in Resources */,
+				9D8BA73517C1395C004279A4 /* addlightmanual@2x.png in Resources */,
+				9D8BA73617C1395C004279A4 /* addlights.png in Resources */,
+				9D8BA73717C1395C004279A4 /* addlights@2x.png in Resources */,
+				9D8BA73817C1395C004279A4 /* press_smartbridge.png in Resources */,
+				9D8BA73917C1395C004279A4 /* press_smartbridge@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -234,9 +438,24 @@
 				9D814CE8177FB2EF00908E2B /* ABAppDelegate.m in Sources */,
 				9D814CF1177FB2EF00908E2B /* ABMainViewController.m in Sources */,
 				9D814CF4177FB2EF00908E2B /* ABFlipsideViewController.m in Sources */,
-				9D814D12177FB40300908E2B /* PHBridgePushLinkViewController.m in Sources */,
-				9D814D14177FB40300908E2B /* PHBridgeSelectionViewController.m in Sources */,
 				9D814D16177FB40300908E2B /* ABHueManager.m in Sources */,
+				9D8BA6E917C13930004279A4 /* JSONKit.m in Sources */,
+				9D8BA6F917C13940004279A4 /* DDAbstractDatabaseLogger.m in Sources */,
+				9D8BA6FA17C13940004279A4 /* DDASLLogger.m in Sources */,
+				9D8BA6FB17C13940004279A4 /* DDFileLogger.m in Sources */,
+				9D8BA6FC17C13940004279A4 /* DDLog.m in Sources */,
+				9D8BA6FD17C13940004279A4 /* DDTTYLogger.m in Sources */,
+				9D8BA6FE17C13940004279A4 /* ContextFilterLogFormatter.m in Sources */,
+				9D8BA6FF17C13940004279A4 /* DispatchQueueLogFormatter.m in Sources */,
+				9D8BA72417C1395C004279A4 /* PHFindLightsManualEntryViewController.m in Sources */,
+				9D8BA72617C1395C004279A4 /* PHFindLightsResultViewController.m in Sources */,
+				9D8BA72817C1395C004279A4 /* PHFindLightsStartViewController.m in Sources */,
+				9D8BA72A17C1395C004279A4 /* PHLoadingViewController.m in Sources */,
+				9D8BA72C17C1395C004279A4 /* PHBridgeConfigurationViewController.m in Sources */,
+				9D8BA72E17C1395C004279A4 /* PHBridgePushLinkViewController.m in Sources */,
+				9D8BA73017C1395C004279A4 /* PHBridgeSelectionViewController.m in Sources */,
+				9D8BA73217C1395C004279A4 /* PHConfigurationViewController.m in Sources */,
+				9D8BA73A17C1395C004279A4 /* PHSoftwareUpdateManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -342,6 +561,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)\"",
+					"\"$(SRCROOT)/3rdParty/PhilipsHueSDKiOS\"",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "HueControl/HueControl-Prefix.pch";
@@ -357,6 +577,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)\"",
+					"\"$(SRCROOT)/3rdParty/PhilipsHueSDKiOS\"",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "HueControl/HueControl-Prefix.pch";

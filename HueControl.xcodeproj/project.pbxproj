@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9D33C14D1839484F003C7720 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D33C14C1839484F003C7720 /* CoreLocation.framework */; };
 		9D814CD8177FB2EF00908E2B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D814CD7177FB2EF00908E2B /* UIKit.framework */; };
 		9D814CDA177FB2EF00908E2B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D814CD9177FB2EF00908E2B /* Foundation.framework */; };
 		9D814CDC177FB2EF00908E2B /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D814CDB177FB2EF00908E2B /* CoreGraphics.framework */; };
@@ -60,6 +61,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9D33C14C1839484F003C7720 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		9D814CD4177FB2EF00908E2B /* HueControl.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HueControl.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D814CD7177FB2EF00908E2B /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		9D814CD9177FB2EF00908E2B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -141,6 +143,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9D33C14D1839484F003C7720 /* CoreLocation.framework in Frameworks */,
 				9DC3A7C817C12EAE0037421C /* CoreMotion.framework in Frameworks */,
 				9D814CD8177FB2EF00908E2B /* UIKit.framework in Frameworks */,
 				9D814CDA177FB2EF00908E2B /* Foundation.framework in Frameworks */,
@@ -174,6 +177,7 @@
 		9D814CD6177FB2EF00908E2B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				9D33C14C1839484F003C7720 /* CoreLocation.framework */,
 				9D8BA6E517C13922004279A4 /* HueSDK.framework */,
 				9DC3A7C717C12EAE0037421C /* CoreMotion.framework */,
 				9D814CD7177FB2EF00908E2B /* UIKit.framework */,

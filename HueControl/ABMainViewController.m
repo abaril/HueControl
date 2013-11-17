@@ -9,19 +9,24 @@
 #import "ABMainViewController.h"
 
 #import <CoreMotion/CoreMotion.h>
+#import <CoreLocation/CoreLocation.h>
 #import <HueSDK/HueSDK.h>
 #import "PHBridgePushLinkViewController.h"
 #import "PHBridgeSelectionViewController.h"
 
-@interface ABMainViewController () <PHBridgePushLinkViewControllerDelegate, PHBridgeSelectionViewControllerDelegate>
+@interface ABMainViewController () <PHBridgePushLinkViewControllerDelegate, PHBridgeSelectionViewControllerDelegate, CLLocationManagerDelegate>
 
 @property (weak, nonatomic) IBOutlet UILabel *brightnessLabel;
 @property (weak, nonatomic) IBOutlet UILabel *proximityLabel;
+@property (weak, nonatomic) IBOutlet UILabel *rangeLabel;
 @property (strong, nonatomic) PHHueSDK *phHueSDK;
 @property (strong, nonatomic) PHBridgePushLinkViewController *pushLinkViewController;
 @property (strong, nonatomic) CMMotionManager *motionManager;
 @property (strong, nonatomic) NSOperationQueue *motionQueue;
 @property (copy, nonatomic) NSNumber *lightOn;
+
+@property (strong, nonatomic) CLLocationManager *locationManager;
+@property (strong, nonatomic) CLBeaconRegion *beaconRegion;
 
 @end
 
@@ -130,6 +135,46 @@
     }
 }
 
+#pragma mark - iBeacon
+
+- (void)initializeBeaconSupport
+{
+    self.beaconRegion = [[CLBeaconRegion alloc] initWithProximityUUID:[[NSUUID alloc] initWithUUIDString:@"C8FABE4D-44AC-4EBB-A232-31E3478F2309"]
+                                                                major:1 minor:2 identifier:@"Allan"];
+
+    
+    self.locationManager = [[CLLocationManager alloc] init];
+    self.locationManager.delegate = self;
+    
+    [self.locationManager startRangingBeaconsInRegion:self.beaconRegion];
+}
+
+- (void)locationManager:(CLLocationManager *)manager didRangeBeacons:(NSArray *)beacons inRegion:(CLBeaconRegion *)region
+{
+    NSLog(@"Beacon in range!");
+    
+    if (beacons && beacons.count > 0) {
+        CLBeacon *beacon = beacons[0];
+        self.rangeLabel.text = [NSString stringWithFormat:@"%.02f", beacon.accuracy];
+        if (beacon.accuracy <= 3.0) {
+            [self turnLightOn];
+        }
+        else
+        {
+            [self turnLightOff];
+        }
+    }
+    else {
+        [self turnLightOff];
+    }
+}
+
+- (void)locationManager:(CLLocationManager *)manager rangingBeaconsDidFailForRegion:(CLBeaconRegion *)region withError:(NSError *)error
+{
+    NSLog(@"Error ranging beacon: %@", [error localizedDescription]);
+}
+
+
 #pragma mark - Hue
 
 - (void)initializeHueSDK
@@ -151,7 +196,8 @@
 {
     NSLog(@"Connected!!!");
     
-    [self initAccelerometer];
+    //[self initAccelerometer];
+    [self initializeBeaconSupport];
 }
 
 - (void)switchLightToState:(NSNumber *)on
